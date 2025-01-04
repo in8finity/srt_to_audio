@@ -21,18 +21,32 @@ Copyright (C) 2006  Free Software Foundation, Inc.
 
 You will need the docker and docker-compose installed to run converter.
 Make sure if they are installed. 
+You must set some constants in env.dev:
+```
+ELEVENLABS_API_KEY='...'
+OPENAI_API_KEY='...'
+AI_AUDIO_GEN_PREFIX_TEXT='Далее идет текст на русском, диктор говорит очень спокойно и размеренно, текст о теле: [pause 2s] />... - - - '
+```
 Then just use
 ```bash
 make run
-
 ```
+
+to convert all `./data/inputs/*.srt` files into audio
+
 
 ### Just in console
 
-instal required dependencies 
+instal required dependencies: 
+1. python3
+2. pip
+2. ffmpeg
+3. libs from requirements.txt (with `pip install -r requirements.txt`)
+
 
 ### For development
 
+TODO:
 
 ## Key modules
 
