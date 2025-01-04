@@ -1,0 +1,9 @@
+setuptools
+debugpy
+
+# main
+
+elevenlabs
+openai
+pydub
+librosa

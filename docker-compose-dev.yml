@@ -1,0 +1,12 @@
+services:
+  app:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    command: loop
+    environment:
+      ELEVENLABS_API_KEY: '${ELEVENLABS_API_KEY}'
+      OPENAI_API_KEY: '${OPENAI_API_KEY}'
+      AI_AUDIO_GEN_PREFIX_TEXT: '${AI_AUDIO_GEN_PREFIX_TEXT}'
+    volumes:
+      - ./:/usr/src/app
